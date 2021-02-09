@@ -6,11 +6,12 @@ public class Cat {
         public int strength;
 
         public Cat() {
+            System.out.println("Я кот"); // строчка для гита создана
         }
 
     public boolean fight(Cat anotherCat) {
         //напишите тут ваш код
-        int sum = 0;
+        int sum;
         int a = Integer.compare(this.age, anotherCat.age);
         int b = Integer.compare(this.strength, anotherCat.strength);
         int c = Integer.compare(this.weight, anotherCat.weight);
