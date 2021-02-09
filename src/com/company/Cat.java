@@ -7,6 +7,7 @@ public class Cat {
 
         public Cat() {
             System.out.println("Я кот"); // строчка для гита создана
+            System.out.println("Еще одна строка для гита");
         }
 
     public boolean fight(Cat anotherCat) {
