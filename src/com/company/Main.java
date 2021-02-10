@@ -7,6 +7,7 @@ public class Main {
     public static TestString testString = new TestString();
 
     public static void main(String[] args) throws IOException {
+        System.out.println("This string were create from office Puteyskaya");
         System.out.println();
         PrintStream ishodnik = System.out;
         ByteArrayOutputStream ba = new ByteArrayOutputStream();
