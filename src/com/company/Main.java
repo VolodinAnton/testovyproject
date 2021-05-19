@@ -1,51 +1,41 @@
 package com.company;
 
 
-import java.io.*;
+import java.io.IOException;
 
+/*Делает в строку сразу результат на печать
+
+    public static String getNetAddress(byte[] ip, byte[] mask) {
+        String result = "";
+        String promezh = "";
+        for (int i = 0; i < 4; i++) {
+            byte a = ip[i];
+            byte b = mask[i];
+
+            int c = a&b;
+
+            String fromBinary = Integer.toBinaryString(c);
+            if (fromBinary.length() > 8) {
+                promezh = fromBinary.substring(24, 31);}
+            else promezh = String.format("%8s", fromBinary).replace(" ", "0");
+
+            result = result + promezh + " ";
+        }
+        return result;
+    }*/
 public class Main {
-    public static TestString testString = new TestString();
-
     public static void main(String[] args) throws IOException {
-        System.out.println("This string were create from office Puteyskaya");
-        System.out.println();
-        PrintStream ishodnik = System.out;
-        ByteArrayOutputStream ba = new ByteArrayOutputStream();
-        PrintStream ps = new PrintStream(ba);
-        System.setOut(ps);
-        TestString ts = new TestString();
-        ts.printSomething();
-        System.setOut(ishodnik);
-        String a = "";
-        String c = "";
-        BufferedReader br = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(ba.toByteArray())));
-        while (br.ready()) {
-                String b = br.readLine() + "\n";
-                a = a.concat(b);
-            if ((c = br.readLine()) != null){
-                a = a.concat(c + "\n");
-                a = a.concat("JavaRush - курсы Java онлайн" + "\n");
-            }
-        }
-        System.out.println(a);
+        int a = 3;
+        int b = --a + (a++ * ++a);
+        System.out.println(b);
     }
 
-    public static class TestString {
-        public void printSomething() {
-            System.out.println("first");
-            System.out.println("second");
-            System.out.println("third");
-            System.out.println("fourth");
-            System.out.println("fifth");
-            System.out.println("six");
-            System.out.println("seven");
-            System.out.println("eighth");
-            System.out.println("nine");
-            System.out.println("ten");
-            System.out.println("eleven");
-        }
-    }
+
 }
+
+
+
+
 
         /*String name = a.replaceAll("\\d", "").trim();
         String date = a.substring(name.length()+1, a.length());
