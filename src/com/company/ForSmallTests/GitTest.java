@@ -7,5 +7,6 @@ public class GitTest {
     public void print(String a) {
         System.out.println(a);
         System.out.println();
+        System.out.println("From New_Branch1");
     }
 }
